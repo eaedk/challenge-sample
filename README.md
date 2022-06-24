@@ -13,6 +13,6 @@ This sample will be based on a Zindi competition.
 
 It starts by the presentation of the challenge.
 
-After that, there is ` hints ` to guide challenger. In this section, all the resources the learner will have to explore are mentioned. It can be local or internet resources. 
+After that, there are some ` hints ` to guide challenger. In this section, all the resources the learner will have to explore are mentioned. It can be local or internet resources. 
 
 Also another section can be added to specify some approaches that they must apply, and for practice some code samples could be added to help the learners for the a bit more if they struggle to do code by themselves exploring listed resources.
