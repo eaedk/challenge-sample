@@ -1,5 +1,5 @@
-# Assignment 2: Welcome to your first evaluation!
-> Due: 8:45 PM, Friday, March 18, 2022
+# Assignment XX : Welcome to your first evaluation!
+> Due: 00:XX PM, Friday, July 18, 20XX
 
 
 ## Instructions:
