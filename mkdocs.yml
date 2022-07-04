@@ -1,3 +1,6 @@
+# mkdocs.yml
+theme:
+  name: "material"
 site_name: My Docs
 
 plugins:
