@@ -1,3 +1,3 @@
 # Reference
 
-::: my_library.my_module.my_class
+::: evaluation-on-python-basics.application.CalculatorBis
