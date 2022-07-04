@@ -38,7 +38,8 @@ class StdInputReader(InputReader):
     This class should have one method:
     - To read input from the keyboard, convert it to integer and return it
     """
-    def get_input(self)  -> int:
+
+    def get_input(self) -> int:
         """This function show a message to invite use to type an integer to the keyboard
         convert it to the integer format and return it.
 
@@ -47,11 +48,10 @@ class StdInputReader(InputReader):
         keyboard_int_input (integer): number typed by the user.
         """
 
-        msg = "Please type the integer you want to compute its tribonacci:\n>>>" #message to help user to know what they should type
+        msg = "Please type the integer you want to compute its tribonacci:\n>>>"  # message to help user to know what they should type
         keyboard_int_input = int(input(msg))
 
         return keyboard_int_input
-
 
 
 class TextFileInputReader(InputReader):
@@ -67,18 +67,18 @@ class TextFileInputReader(InputReader):
 
     """
 
-    def __init__(self, file_location:str) -> None:
+    def __init__(self, file_location: str) -> None:
         super().__init__()
         self.file_location = file_location
 
-    def get_input(self)  -> int:
+    def get_input(self) -> int:
         """This function read an integer from a file and return it.
 
         Return
         ------
         read_int (integer): number read from the file.
         """
-        
+
         with open(self.file_location, "r") as f:
             read_int = int(f.readline())
 
@@ -92,8 +92,8 @@ class Calculator:
     - one returned value: tribonacci of n using the recursive process
     """
 
-    def tribonacci(self, n:int) -> int:
-        """ function that generates the Tribonacci serie of n using the recursive process
+    def tribonacci(self, n: int) -> int:
+        """function that generates the Tribonacci serie of n using the recursive process
 
         Parameter
         ---------
@@ -104,12 +104,15 @@ class Calculator:
         tribo (integer): tribonacci of n using the recursive process.
         """
 
-        tribo_dict = { 0:0,  1:0,  2:1, } # dictionary to store the start of the tribonacci serie
+        tribo_dict = {
+            0: 0,
+            1: 0,
+            2: 1,
+        }  # dictionary to store the start of the tribonacci serie
 
         # put your code here
 
         return tribo
-
 
 
 class CalculatorBis:
@@ -119,7 +122,7 @@ class CalculatorBis:
     - one returned value: tribonacci of n using the iterative process
     """
 
-    def tribonacci(self, n:int) -> int:
+    def tribonacci(self, n: int) -> int:
         """function that generates the Tribonacci serie of n iteratively
 
         Parameter
@@ -131,10 +134,14 @@ class CalculatorBis:
         tribo_value (integer): tribonacci of n using the iterative process.
         """
 
-        tribo_dict = { 0:0,  1:0,  2:1, } # dictionary to store the tribonacci values computed until the searched value
+        tribo_dict = {
+            0: 0,
+            1: 0,
+            2: 1,
+        }  # dictionary to store the tribonacci values computed until the searched value
 
         # put your code here
-        
+
         return tribo_dict[n]
 
 
@@ -156,23 +163,26 @@ class CalculatorApp:
         self.reader = reader
         self.calculator = calculator
 
-    def calculate(self,) -> int:
+    def calculate(
+        self,
+    ) -> int:
         """function that calculates the tribonacci of the number returned by the self.reader attribute
 
         Return
         ------
         tribo (integer): tribonacci value of the value read by the self.reader attribute.
         """
-        
+
         # put your code here
 
-        return tribo 
+        return tribo
 
 
 def main():
     # put your code here
-
+    pass
 
 
 if __name__ == "__main__":
     # put your code here
+    pass
